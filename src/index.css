@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-background: #d4c4a8;
+  --color-foreground: #3a2f20;
+  --color-primary: #c9934a;
+  --color-primary-foreground: #3a2f20;
+  --color-secondary: #c4b298;
+  --color-secondary-foreground: #3a2f20;
+  --color-accent: #b8834e;
+  --color-accent-foreground: #d4c4a8;
+  --color-muted: #c9b8a0;
+  --color-muted-foreground: #5a4d38;
+  --color-card: #d4c4a8;
+  --color-border: #b8a890;
+  
+  --color-terracotta: #c97d6a;
+  --color-sage: #8a9d88;
+  --color-sand: #c4b298;
+  --color-clay: #b8834e;
+  --color-coffee: #5a4528;
+  
+  --radius-xl: 3rem;
+  --radius-lg: 2rem;
+  --radius-md: 1.5rem;
+  --radius-sm: 1rem;
+  
+  --shadow-neuro-sm: 6px 6px 12px rgba(109, 84, 54, 0.3), 
+                     -6px -6px 12px rgba(235, 220, 200, 0.9);
+  --shadow-neuro: 10px 10px 20px rgba(109, 84, 54, 0.35), 
+                  -10px -10px 20px rgba(235, 220, 200, 0.95);
+  --shadow-neuro-lg: 15px 15px 30px rgba(109, 84, 54, 0.4), 
+                     -15px -15px 30px rgba(235, 220, 200, 1);
+  --shadow-neuro-inset: inset 8px 8px 16px rgba(109, 84, 54, 0.35), 
+                        inset -8px -8px 16px rgba(235, 220, 200, 0.9);
+  --shadow-neuro-hover: 12px 12px 24px rgba(109, 84, 54, 0.4), 
+                        -12px -12px 24px rgba(235, 220, 200, 1);
+}
+
+.dark {
+  --color-background: #2a2520;
+  --color-foreground: #f0e8dc;
+  --color-primary: #d4a574;
+  --color-primary-foreground: #2a2520;
+  --color-secondary: #3d3630;
+  --color-secondary-foreground: #f0e8dc;
+  --color-accent: #c19a6b;
+  --color-accent-foreground: #2a2520;
+  --color-muted: #352f28;
+  --color-muted-foreground: #c9bfb0;
+  --color-card: #2a2520;
+  --color-border: #4a4035;
+  
+  --color-terracotta: #e88873;
+  --color-sage: #a4c3a0;
+  --color-sand: #4a4035;
+  --color-clay: #d4a574;
+  --color-coffee: #9d8366;
+  
+  --shadow-neuro-sm: 6px 6px 12px rgba(0, 0, 0, 0.8);
+  --shadow-neuro: 10px 10px 20px rgba(0, 0, 0, 0.9);
+  --shadow-neuro-lg: 15px 15px 30px rgba(0, 0, 0, 1);
+  --shadow-neuro-inset: inset 8px 8px 16px rgba(0, 0, 0, 0.9);
+  --shadow-neuro-hover: 12px 12px 24px rgba(0, 0, 0, 0.95);
+}
+
+* {
+  border-color: transparent;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
