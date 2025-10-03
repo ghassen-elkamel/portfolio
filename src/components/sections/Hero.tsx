@@ -13,7 +13,7 @@ export function Hero() {
   ]
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-36 md:pt-40 lg:pt-32">
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
@@ -21,7 +21,7 @@ export function Hero() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 sm:space-y-8 md:space-y-10"
+              className="space-y-6 sm:space-y-8 md:space-y-10 order-2 lg:order-1"
             >
               <div className="space-y-4 sm:space-y-6 md:space-y-8">
                 <motion.div
@@ -134,7 +134,7 @@ export function Hero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="relative mt-8 lg:mt-0"
+              className="relative order-1 lg:order-2 mb-8 lg:mb-0"
             >
               <div className="relative aspect-square max-w-xs sm:max-w-sm md:max-w-md mx-auto">
                 <div className="relative w-full h-full rounded-[2rem] sm:rounded-[3rem] bg-background shadow-[var(--shadow-neuro-lg)] p-2 sm:p-3">
